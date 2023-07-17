@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pagina de ropa</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/logo text.png" alt="Logo" height="70" class="d-inline-block align-text-top">
+                    <h1>Pagina de ropa</h1>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/sobrenosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <h2 id="inicio">Inicio</h2>
+    <div class="separador">
+        <div class="add_clothes">
+            <label for="inputNombre">Tu nombre:</label>
+            <input type="text" id="inputNombre"><br>
+    
+            <div class="selectClothes">
+                <script src="./js/mostrarCampoCorrespondiente.js"></script>
+                <label for="inputPrenda">Prenda:</label>
+                <select name="selectClothe" id="inputPrenda" onchange="mostrarCampoCorrespondiente()">
+                    <option value="">Seleccionar</option>
+                    <option value="Camisetas">Camisetas</option>
+                    <option value="Hoddies">Hoddies</option>
+                    <option value="Camperas">Camperas</option>
+                    <option value="Pantalones">Pantalones</option>
+                </select>
+        
+                <div id="campoCamisetas" class="hidden">
+                    <label for="inputNombreCamiseta">Nombre de camiseta</label>
+                    <select name="Camisetas" id="inputNombreCamiseta">
+                        <option value="">Seleccionar</option>
+                        <option value="Dark Room">Dark Room</option>
+                        <option value="Bkrm Things">BKRM Things</option>
+                        <option value="Beyond Hell">Beyond Hell</option>
+                    </select>
+                </div>
+                <div id="campoHoddies" class="hidden">
+                    <label for="inputNombreHoddie">Nombre de hoddie</label>
+                    <select name="Hoddies" id="inputNombreHoddie">
+                        <option value="">Seleccionar</option>
+                        <option value="Dark Room">Dark Room</option>
+                        <option value="Bkrm Things">BKRM Things</option>
+                        <option value="Beyond Hell">Beyond Hell</option>
+                    </select>
+                </div>
+                <div id="campoCamperas" class="hidden">
+                    <label for="inputNombreCampera">Nombre de Campera</label>
+                    <select name="Camperas" id="inputNombreCampera">
+                        <option value="">Seleccionar</option>
+                        <option value="Dark Room">Dark Room</option>
+                        <option value="Bkrm Things">BKRM Things</option>
+                        <option value="Beyond Hell">Beyond Hell</option>
+                    </select>
+                </div>
+                <div id="campoPantalones" class="hidden">
+                    <label for="inputNombrePantalon">Nombre de pantalon</label>
+                    <select name="Pantalones" id="inputNombrePantalon">
+                        <option value="">Seleccionar</option>
+                        <option value="Dark Room">Dark Room</option>
+                        <option value="Bkrm Things">BKRM Things</option>
+                        <option value="Beyond Hell">Beyond Hell</option>
+                    </select>
+                </div>
+            </div>
+            <button id="btnAgregar">Agregar</button>
+        </div>
+    
+        <div class="prendasAgregadas">
+            <script src="./js/prendasLogica.js"></script>
+            <h2>Prendas Agregadas:</h2>
+            <ul id="listaPrendas" type="none">
+                
+            </ul>
+        </div> 
+    </div>
+</body>
+</html>

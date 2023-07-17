@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Danger";
+    src: url(../font/another_danger/Another\ Danger\ -\ Demo.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+header {
+    background-color: aqua;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 24px;
+    color: brown;
+    font-family: "Danger", Arial, Helvetica, sans-serif;
+    padding-right: 100px;
+}
+
+.nav-link {
+    font-size: 21px;
+    font-family: "Danger", Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+li{
+    padding: 0px 25px;
+}
+
+#inicio {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.separador{
+    display: flex;
+}
+
+.add_clothes{
+    width: 500px;
+    background-color: rgb(233, 233, 233);
+    border: black solid 1px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.add_clothes label{
+    padding: 10px;
+    display: flex;
+}
+
+.prendasAgregadas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prendasAgregadas li{
+    text-decoration: none;
+    font-size: 18px;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnAgregar{
+    text-align: center;
+    padding: 5px 10px;
+    margin: 30px 120px;
+}
