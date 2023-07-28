@@ -50,63 +50,33 @@
             <input type="text" id="inputNombre"><br>
     
             <div class="selectClothes">
-                <script src="./js/mostrarCampoCorrespondiente.js"></script>
-                <label for="inputPrenda">Prenda:</label>
-                <select name="selectClothe" id="inputPrenda" onchange="mostrarCampoCorrespondiente()">
-                    <option value="">Seleccionar</option>
+                <label for="inputPrenda">Categoria de prenda:</label>
+                <select name="selectClothe" id="inputPrenda" onchange="actualizarPrendasDisponibles()">
+                    <option value="empty">Seleccionar</option>
                     <option value="Camisetas">Camisetas</option>
                     <option value="Hoddies">Hoddies</option>
                     <option value="Camperas">Camperas</option>
                     <option value="Pantalones">Pantalones</option>
                 </select>
-        
-                <div id="campoCamisetas" class="hidden">
-                    <label for="inputNombreCamiseta">Nombre de camiseta</label>
-                    <select name="Camisetas" id="inputNombreCamiseta">
-                        <option value="">Seleccionar</option>
-                        <option value="Dark Room">Dark Room</option>
-                        <option value="Bkrm Things">BKRM Things</option>
-                        <option value="Beyond Hell">Beyond Hell</option>
-                    </select>
-                </div>
-                <div id="campoHoddies" class="hidden">
-                    <label for="inputNombreHoddie">Nombre de hoddie</label>
-                    <select name="Hoddies" id="inputNombreHoddie">
-                        <option value="">Seleccionar</option>
-                        <option value="Dark Room">Dark Room</option>
-                        <option value="Bkrm Things">BKRM Things</option>
-                        <option value="Beyond Hell">Beyond Hell</option>
-                    </select>
-                </div>
-                <div id="campoCamperas" class="hidden">
-                    <label for="inputNombreCampera">Nombre de Campera</label>
-                    <select name="Camperas" id="inputNombreCampera">
-                        <option value="">Seleccionar</option>
-                        <option value="Dark Room">Dark Room</option>
-                        <option value="Bkrm Things">BKRM Things</option>
-                        <option value="Beyond Hell">Beyond Hell</option>
-                    </select>
-                </div>
-                <div id="campoPantalones" class="hidden">
-                    <label for="inputNombrePantalon">Nombre de pantalon</label>
-                    <select name="Pantalones" id="inputNombrePantalon">
-                        <option value="">Seleccionar</option>
-                        <option value="Dark Room">Dark Room</option>
-                        <option value="Bkrm Things">BKRM Things</option>
-                        <option value="Beyond Hell">Beyond Hell</option>
-                    </select>
-                </div>
+
+                <label for="inputNombrePrenda">Nombre de prenda:</label>
+                <select name="prendas" id="inputNombrePrenda">
+                    <option value="empty">Seleccionar</option>
+                </select>
+
+                <label id="precioPrenda">Precio:</label>
             </div>
             <button id="btnAgregar">Agregar</button>
         </div>
     
         <div class="prendasAgregadas">
-            <script src="./js/prendasLogica.js"></script>
-            <h2>Prendas Agregadas:</h2>
+            <h2>Compras realizadas:</h2>
             <ul id="listaPrendas" type="none">
                 
             </ul>
         </div> 
     </div>
+    <script src="./js/prendasLogica.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

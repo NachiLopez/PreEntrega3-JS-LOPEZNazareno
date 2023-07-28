@@ -58,7 +58,7 @@ li{
 }
 
 .add_clothes label{
-    padding: 10px;
+    padding: 10px 0px;
     display: flex;
 }
 
@@ -68,8 +68,13 @@ li{
     flex-direction: column;
 }
 
+.prendasAgregadas h2{
+    padding: 0px 0px 0px 55px;
+}
+
 .prendasAgregadas li{
     text-decoration: none;
+    padding: 5px 0px;
     font-size: 18px;
     color: brown;
     font-family: Arial, Helvetica, sans-serif;

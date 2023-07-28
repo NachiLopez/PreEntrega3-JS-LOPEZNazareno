@@ -1,0 +1,87 @@
+[
+    {
+      "id" : 1,
+      "categoria": "Camisetas",
+      "nombre": "Backroom Nightmare",
+      "descripcion": "Camiseta negra con diseño de laberinto y luces amarillas.",
+      "precio": 25.99
+    },
+    {
+      "id" : 2,
+      "categoria": "Camisetas",
+      "nombre": "Backroom Paranoia",
+      "descripcion": "Camiseta de manga larga con estampado de habitaciones laberínticas.",
+      "precio": 27.99
+    },
+    {
+      "id" : 3,
+      "categoria": "Camisetas",
+      "nombre": "Backroom Desesperation",
+      "descripcion": "Camiseta gris con ilustración de puertas cerradas y efecto de escape.",
+      "precio": 23.99
+    },
+    {
+      "id" : 4,
+      "categoria": "Pantalones",
+      "nombre": "Backroom Maze",
+      "descripcion": "Pantalones oscuros con estampado de laberinto y detalles amarillos.",
+      "precio": 39.99
+    },
+    {
+      "id" : 5,
+      "categoria": "Pantalones",
+      "nombre": "Backroom Escape",
+      "descripcion": "Pantalones deportivos con diseño inspirado en laberintos y sensación de escape.",
+      "precio": 34.99
+    },
+    {
+      "id" : 6,
+      "categoria": "Pantalones",
+      "nombre": "Backroom Obsession",
+      "descripcion": "Pantalones ajustados con gráficos de puertas misteriosas y pasillos.",
+      "precio": 36.99
+    },
+    {
+      "id" : 7,
+      "categoria": "Hoddies",
+      "nombre": "Backroom Desperation",
+      "descripcion": "Sudadera con capucha en tonos oscuros y diseño de habitación cerrada.",
+      "precio": 49.99
+    },
+    {
+      "id" : 8,
+      "categoria": "Hoddies",
+      "nombre": "Backroom Nightfall",
+      "descripcion": "Sudadera con capucha y bolsillo canguro con ilustración de laberintos.",
+      "precio": 53.99
+    },
+    {
+      "id" : 9,
+      "categoria": "Hoddies",
+      "nombre": "Backroom Shadows",
+      "descripcion": "Sudadera con capucha y diseño en tonos sombríos y misteriosos.",
+      "precio": 45.99
+    },
+    {
+      "id": 10,
+      "categoria": "Camperas",
+      "nombre": "Backroom Jacket",
+      "descripcion": "Campera de estilo backroom con diseño de sombras eternas.",
+      "precio": 67.99
+    },
+    {
+      "id": 11,
+      "categoria": "Camperas",
+      "nombre": "Nightmare Coat",
+      "descripcion": "Campera de estilo backroom con diseño de abrigo para pesadillas.",
+      "precio": 69.99
+    },
+    {
+      "id": 12,
+      "categoria": "Camperas",
+      "nombre": "Abyss Parka",
+      "descripcion": "Campera de estilo backroom con diseño oscuro y misterioso.",
+      "precio": 79.50
+    }
+  ]
+  
